@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="tab-2">
+      Book title :<input type="text" name="title" id="title">
+      Author :<input type="text" name="author" id="author">
+      Year :<input type="number" name="year" id="year">
+      Genre :<input type="text" name="genre" id="genre">
+      Read:<input type="checkbox" id="read">
+
+      <button onclick="addHtmlTableRow();">Add</button>
+      <button onclick="editHtmlTableSelectedRow();">Edit</button>
+      <button onclick="removeSelectedRow();">Remove</button>
+      <button onclick="clearTable();">Clear Field</button>
+    </div>
+
+    <div class="tab-1">
+      <table id="table" border="1">
+        <tr>
+          <th>Book title</th>
+          <th>Author</th>
+          <th>Year</th>
+          <th>Genre</th>
+          <th>Read</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
