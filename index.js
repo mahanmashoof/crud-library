@@ -79,5 +79,3 @@ function alertEmptyCell() {
     emptyCell = false;
   }
 }
-
-console.log(localStorage);
